@@ -31,7 +31,7 @@ class PhoneNumberCodeGrantServiceProvider extends ServiceProvider
 
     protected function makeNumberVerificationCodeGrant()
     {
-        $grant = new PhoneVerificationCodeGrant(
+        $grant = new PhoneNumberCodeGrant(
             $this->app->make(UserRepository::class),
             $this->app->make(RefreshTokenRepository::class)
         );
