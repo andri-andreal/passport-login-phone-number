@@ -1,0 +1,28 @@
+{
+    "name": "andri-andreal/passport-login-phone-number",
+    "description": "Resource Login with Phone Number for Laravel Passport",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andri Andreal",
+            "email": "andri.24434@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/passport": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Andreal\\PhoneNumberCodeGrant\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Andreal\\PhoneNumberCodeGrant\\PhoneNumberCodeGrantServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
